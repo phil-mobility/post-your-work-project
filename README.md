@@ -4,6 +4,10 @@ Little terminal UI to filter some customer usage data of a US bikesharing compan
 
 ## How to use this project
 
+Install:
+- python
+- pandas
+
 Start the UI:
 
 ```python
