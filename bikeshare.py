@@ -7,6 +7,13 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 def get_valid_input(prompt, valid_options):
+    """
+    Validation of user-input.
+    If no valid option is put in, asks again and lists all valid options.
+
+    Return:
+        (str) user-input, only if it is valid
+    """
     response = input(prompt).strip().lower()
     while response not in valid_options:
         print(f"Invalid input. Please choose one of: {', '.join(valid_options)}")
